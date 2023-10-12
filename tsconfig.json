@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["./src/react-app-env.d.ts"],
     "target": "es5",
     "lib": [
       "dom",

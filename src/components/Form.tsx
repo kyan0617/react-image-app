@@ -1,12 +1,14 @@
-import { useState } from 'react';
+type FormPropsType = {
+  word: string;
+  setWord: React.Dispatch<React.SetStateAction<string>>;
+  getPhotoData: (e: any) => void;
+}
 
-const Form = () => {
-  const [text, setText] = useState<string>("");
+const Form = ({ word, setWord, getPhotoData }: FormPropsType) => {
   return (
-    <form>
-      <input type="text" name="text" placeholder="Search Text" onChange={e => setText(e.target.value)} />
-      {text}
-      <button type="submit">Search Images</button>
+    <form className="form">
+      <input type="text" className="input" name="word" placeholder="Search Word" onChange={e => setWord(e.target.value)} value={word} />
+      <button type="submit" className="button" onClick={getPhotoData}>Search Images</button>
     </form>
   );
 };
