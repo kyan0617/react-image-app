@@ -40,6 +40,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  margin-bottom: 80px;
 }
 .input {
   display: block;
@@ -70,12 +71,17 @@
   }
 }
 
+.search-title {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 .photo-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   gap: 1rem;
-  margin: 1rem;
-  padding-block: 80px;
+  padding-block: 0 80px;
 }
 .photo-item {
   width: 100%;
